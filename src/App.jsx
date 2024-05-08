@@ -20,7 +20,7 @@ const App = () => {
             key={ele.name.common}
             className='div'
           >
-              <img className='img' src={ele.flags.png}  alt="" />
+              <img className='img' src={ele.flags.svg}  alt="" />
               <p>{ele.name.common}</p>
           </div>
         ))
