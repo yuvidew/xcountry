@@ -10,7 +10,6 @@ const App = () => {
     .catch(e => console.error(e))
   } , [])
 
-  console.log(country);
 
   return (
     <section className='wrapper' >
@@ -20,7 +19,7 @@ const App = () => {
             key={ele.name.common}
             className='div'
           >
-              <img className='img' src={ele.flags.svg}  alt="" />
+              <img className='img' src={ele.flags.svg}  alt={ele.flags.alt} />
               <p>{ele.name.common}</p>
           </div>
         ))
